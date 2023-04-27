@@ -104,6 +104,7 @@
 }
 .footerContainer{
     background-color: green;
+    z-index: 100;
 }
 .footerMenu{
     display: flex;

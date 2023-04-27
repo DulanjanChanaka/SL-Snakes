@@ -15,6 +15,7 @@ function SearchContent() {
   };
   
   const filteredSnakes = Data.filter((Data) => {
+    
     if (selectedColor && Data.bodyColor !== selectedColor) {
       return false;
     }
@@ -23,13 +24,13 @@ function SearchContent() {
     }
     return true;
   });
-<div></div>
+
   return (
-    <div >
+    <div   >
       <h1 style={{ textAlign:"center",fontSize:"20px",borderRadius:"25px", fontWeight:"600", padding:"10px ",marginBottom: "20px", backgroundColor:"green" }}>Snakes Search</h1>
       <div style={{display:"flex" }}><label style={{ backgroundColor:"green", padding:"4px", borderRadius: "10px", marginRight:"10px"}}>
       <h2 style={{textAlign:"center"}}>Color</h2>
-        <select value={selectedColor} onChange={handleColorChange} style={{cursor:"pointer",borderRadius:"25px"}}>
+        <select value={selectedColor} onChange={handleColorChange} style={{cursor:"pointer",borderRadius:"25px"}} >
           <option value="">Any</option>
           <option value="11">brown</option>
           <option value="12">Black</option>
@@ -45,7 +46,7 @@ function SearchContent() {
       </label>
       <label style={{ backgroundColor:"green", padding:"4px", borderRadius: "10px", marginRight: "10px", }}>
          <h2 style={{textAlign:"center", }}>Shape</h2>
-        <select value={selectedBodyShape} onChange={handleBodyShapeChange} style={{cursor:"pointer",borderRadius:"25px"}}>
+        <select value={selectedBodyShape} onChange={handleBodyShapeChange} style={{cursor:"pointer",borderRadius:"25px"}} >
           <option value="">Any</option>
           <option value="1">වයිරම් </option>
           <option value="2">හරස් ඉරි (වළලු )</option>

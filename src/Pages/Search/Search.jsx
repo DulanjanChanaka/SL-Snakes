@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SearchContent from '../Home/SearchContent'
 
 const Search = () => {

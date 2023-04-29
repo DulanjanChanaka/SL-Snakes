@@ -80,6 +80,7 @@ function SearchContent() {
           >
             <img src={Data.photo} alt={Data.name} style={{ width: "100%", height: "90%", objectFit: "cover" }} />
             <h2 style={{ textAlign: "center", marginTop: "5px" }}>{Data.name}</h2>
+            
           </div>
         )
         

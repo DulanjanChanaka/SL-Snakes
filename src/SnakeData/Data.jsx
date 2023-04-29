@@ -12,7 +12,7 @@ const Data = [
     {
     
       id:"2",
-      photo:'https://i.ibb.co/LJkFm7h/93612281-2512063869057560-3534203909272764416-n.jpg',
+      photo:'https://i.ibb.co/JjHPSKL/L-aulicus5.jpg',
       name: 'අළු රදනකයා (නිර්විෂ)',
       bodyColor: '11',
       style: '3',

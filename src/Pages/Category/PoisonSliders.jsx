@@ -11,7 +11,7 @@ const PoisonSliders = ({title, rawsCount, slidesPerView, poisonType}) => {
 const filteredData = Data.filter((Data) => Data.poison === poisonType);
     return (
       <section className="w-full mt-1 pb-8">
-          <h1 style={{ fontSize:"20px" , padding:"10px 100px 10px 130px", margin:"0px 30px 0px 30px", fontWeight:"900" ,backgroundColor:"green", display:"flex ", flexDirection:"raw", borderRadius:"25px"}}>{title}</h1>
+          <h1 style={{ fontSize:"20px" , padding:"10px 100px 10px 130px", margin:"0px 30px 0px 30px", fontWeight:"900" ,backgroundColor:"green", display:"flex ", flexDirection:"raw", borderRadius:"25px", textAlign: "center"}}>{title}</h1>
           <Swiper
           slidesPerView={Number(slidesPerView)}
           grid={{

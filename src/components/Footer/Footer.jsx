@@ -3,9 +3,9 @@ import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import style from "../../Pages/Home/Home.module.css"
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const footerData= [
@@ -33,16 +33,21 @@ const footerData= [
 ]
 
 const Footer = () => {
-  const [footerMenuSelect, setFooterMenuSelect]= useState("Home")
+  const location = useLocation();
+  const [footerMenuSelect, setFooterMenuSelect]= useState("/")
+
+  useEffect(() => {
+    setFooterMenuSelect(location.pathname);
+  }, [location]);
 
   return (
     <div className={style.footerContainer}>
       {footerData.map(({Icon,title, path},index)=>(
         <Link to={path}  key={index} ><div  onClick={()=>
-          setFooterMenuSelect(title)
+          setFooterMenuSelect(path)
         } className={style.footerMenu}
         style={{
-          color: footerMenuSelect === title? 'white':'rgb(34, 26, 26)'
+          color: footerMenuSelect === path? 'white':'rgb(34, 26, 26)'
         }}
         >
         <Icon/>

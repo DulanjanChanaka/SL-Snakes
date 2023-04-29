@@ -39,6 +39,7 @@ function SearchContent() {
           <option value="15">Red</option>
           <option value="16">Ash</option>
           <option value="17">Orange</option>
+          <option value="18">Light Brown</option>
           
           
           {/* add more color options here */}

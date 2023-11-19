@@ -38,6 +38,7 @@
     bottom: 0 ;
     left: 0;
     background-color: white;
+    
 
     display: flex;
     align-items: center;
@@ -54,7 +55,7 @@
 .headerGreenButton{
     width: 7px;
     height: 7px;
-    background-color: rgb(113, 203, 23);
+    background-color: rgb(39, 111, 148);
     border-radius: 50px;
     margin-right: 12px;
     
@@ -103,7 +104,7 @@
     padding-top: 20px;
 }
 .footerContainer{
-    background-color: green;
+    background-color: #34852e;
     z-index: 100;
 }
 .footerMenu{

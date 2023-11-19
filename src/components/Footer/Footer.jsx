@@ -4,7 +4,7 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { useState, useEffect } from 'react';
-import style from "../../Pages/Home/Home.module.css"
+
 import { Link, useLocation } from 'react-router-dom';
 
 
@@ -41,11 +41,11 @@ const Footer = () => {
   }, [location]);
 
   return (
-    <div className={style.footerContainer}>
+    <div className='bottom-0 left-0 fixed w-full py-3 bg-lime-600 z-[100] lg:hidden flex flex-row justify-around text-center drop-shadow-lg'>
       {footerData.map(({Icon,title, path},index)=>(
         <Link to={path}  key={index} ><div  onClick={()=>
           setFooterMenuSelect(path)
-        } className={style.footerMenu}
+        } className=''
         style={{
           color: footerMenuSelect === path? 'white':'rgb(34, 26, 26)'
         }}

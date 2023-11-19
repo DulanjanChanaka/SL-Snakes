@@ -1,4 +1,4 @@
-const Data = [
+const snakedata = [
     
     {
     
@@ -12,7 +12,7 @@ const Data = [
     {
     
       id:"2",
-      photo:'https://i.ibb.co/JjHPSKL/L-aulicus5.jpg',
+      photo:'https://i.ibb.co/JjHPSKL/L-aulicus5.jpg', //not enter
       name: 'අළු රදනකයා (නිර්විෂ)',
       bodyColor: '11',
       style: '3',
@@ -175,7 +175,7 @@ const Data = [
         photo:'https://i.ibb.co/pQk4dQd/106739363-2576100985987181-9047823482532157031-n.jpg',
         name: 'අනංගුලි සර්ප හීරළුවා (නිර්විෂ)',
         bodyColor: '12',
-        style: '3',
+        style: '3',  //not enter
         poison:'4',
       },
       {
@@ -230,7 +230,7 @@ const Data = [
         id:"29",
         photo:'https://i.ibb.co/gd8Qbzm/76643698-2386398658290749-6934395175233912832-n.jpg',
         name: 'පොළොන් තෙලිස්සා / කුණකටුවා (උග්‍ර විෂ)',
-        bodyColor: '11',
+        bodyColor: '11', //not enter
         style: '4',
         poison:'1',
       },
@@ -278,7 +278,7 @@ const Data = [
         id:"35",
         photo:'https://i.ibb.co/LJkFm7h/93612281-2512063869057560-3534203909272764416-n.jpg',
         name: 'අළු රදනකයා (නිර්විෂ)',
-        bodyColor: '11',
+        bodyColor: '11', //not enter
         style: '2',
         poison:'4',
       },
@@ -623,4 +623,4 @@ const Data = [
 
   ];
 
-  export default Data;
+  export default snakedata;
